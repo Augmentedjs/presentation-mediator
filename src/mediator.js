@@ -18,6 +18,12 @@ const DEFAULT_IDENTIFIER = "augmentedIdentifier";
  */
 class Mediator extends Colleague {
   constructor(options) {
+    if (!options) {
+      options = {};
+    }
+    if (!options.el) {
+      options.noEL = true;
+    }
     super(options);
     this._defaultChannel = DEFAULT_CHANNEL;
     this._defaultIdentifier = DEFAULT_IDENTIFIER;
@@ -121,7 +127,6 @@ class Mediator extends Colleague {
   /**
    * Unsubscribe to each subscription
    * @param {Object} [subscriptions] An optional hash of subscription to remove
-  *
    */
   unsetSubscriptions(subscriptions) {
     subscriptions = subscriptions || this._subscriptions;

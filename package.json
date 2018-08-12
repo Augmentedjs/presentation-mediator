@@ -1,6 +1,6 @@
 {
   "name": "presentation-mediator",
-  "version": "2.5.2",
+  "version": "2.5.3",
   "description": "The Augmented.js Next - Presentation Mediator Module.",
   "main": "dist/presentation-mediator.js",
   "scripts": {
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "augmentedjs-next": "^2.2.0",
-    "presentation-view": "^2.5.2"
+    "presentation-view": "^2.5.3"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/presentation-mediator/issues"

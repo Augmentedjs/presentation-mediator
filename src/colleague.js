@@ -58,7 +58,7 @@ class Colleague extends View {
    */
   get mediator() {
     return this._mediator;
-  }
+  };
 };
 
 export default Colleague;
