@@ -257,8 +257,9 @@ class Mediator extends Colleague {
    * @param {object} N Extra parameter to pass to handler
    */
   publish(channel, ...args) {
-    if (!channel || !this._channels[channel]) {
-      //_logger.warn("AUGMENTED: Mediator: channel '" + channel + "' doest exist.");
+    if (!channel || !this._channels || !this._channels[channel]) {
+      console.warn(`Mediator ${this.name}: channel ${channel} doest exist.`);
+      this._channels = {};
       return;
     }
 
