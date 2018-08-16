@@ -13,7 +13,6 @@ const DEFAULT_IDENTIFIER = "augmentedIdentifier";
  * [Mediator]<-----[Colleague]
  *     ^-----------[Colleague]
  * </pre>
- * @memberof Presentation
  * @extends Colleague
  */
 class Mediator extends Colleague {
@@ -68,26 +67,31 @@ class Mediator extends Colleague {
   _dismissMe(colleague) {
     if (colleague instanceof Colleague) {
       let channel = this._colleagueMap[colleague], myChannelObject = this._channels[channel];
-      this.unsubscribe(channel, myChannelObject.fn, colleague, myChannelObject.identifier);
+      return this.unsubscribe(channel, myChannelObject.fn, colleague, myChannelObject.identifier);
     }
+    return null;
   };
 
   /**
    * Extend delegateEvents() to set subscriptions
    * @param {array} event The events to undelegate
+   * @returns {array} the events
    */
   delegateEvents(events) {
     super.delegateEvents(events);
     this.subscriptions = {};
+    return events;
   };
 
   /**
    * Extend undelegateEvents() to unset subscriptions
    * @param {array} event The events to undelegate
+   * @returns {array} the events
    */
   undelegateEvents(events) {
     super.undelegateEvents(events);
     this.unsetSubscriptions();
+    return events;
   };
 
   /**
@@ -122,11 +126,13 @@ class Mediator extends Colleague {
       }
       this.subscribe(subscription.channel, subscription, this, once);
     }
+    return subscriptions;
   };
 
   /**
    * Unsubscribe to each subscription
-   * @param {Object} [subscriptions] An optional hash of subscription to remove
+   * @param {Object} subscriptions An optional hash of subscription to remove
+   * @returns {array} subscriptions
    */
   unsetSubscriptions(subscriptions) {
     subscriptions = subscriptions || this._subscriptions;
@@ -149,6 +155,7 @@ class Mediator extends Colleague {
       }
       this.unsubscribe(subscription.channel, subscription.$once || subscription, this);
     }
+    return subscriptions;
   };
 
   /**
@@ -157,6 +164,7 @@ class Mediator extends Colleague {
    * @param {function} callback The callback to call for this colleague
    * @param {string} channel The Channel to add the pubished events to
    * @param {string} identifier The identifier for this function
+   * @returns {string} The identifier
    */
   observeColleague(colleague, callback, channel, identifier) {
     if (colleague instanceof Colleague) {
@@ -166,6 +174,7 @@ class Mediator extends Colleague {
       colleague.setMediatorMessageQueue(this);
       this.subscribe(channel, callback, colleague, false, (identifier) ? identifier : this._defaultIdentifier);
     }
+    return identifier;
   };
 
   /**
@@ -173,6 +182,7 @@ class Mediator extends Colleague {
    * @param {Colleague} colleague The Colleague to observe
    * @param {string} channel The Channel to add the pubished events to
    * @param {string} identifier The identifier for this function
+   * @returns {string} The identifier
    */
   observeColleagueAndTrigger(colleague, channel, identifier) {
     //console.debug("this", this);
@@ -188,6 +198,7 @@ class Mediator extends Colleague {
       channel,
       (identifier) ? identifier : this._defaultIdentifier
     );
+    return identifier;
   };
 
   /**
@@ -196,6 +207,7 @@ class Mediator extends Colleague {
    * @param {function} callback The callback to call on channel event
    * @param {string} channel The Channel events are pubished to
    * @param {string} identifier The identifier for this function
+   * @returns {string} The identifier
    */
   dismissColleague(colleague, callback, channel, identifier) {
     if (colleague instanceof Colleague) {
@@ -205,6 +217,7 @@ class Mediator extends Colleague {
       colleague.removeMediatorMessageQueue();
       this.unsubscribe(channel, callback, colleague, identifier);
     }
+    return identifier;
   };
 
   /**
@@ -212,9 +225,10 @@ class Mediator extends Colleague {
    * @param {Colleague} colleague The Colleague to observe
    * @param {string} channel The Channel events are pubished to
    * @param {string} identifier The identifier for this function
+   * @returns {string} The identifier
    */
   dismissColleagueTrigger(colleague, channel, identifier) {
-    let id = (identifier) ? identifier : this._defaultIdentifier;
+    const id = (identifier) ? identifier : this._defaultIdentifier;
     this.dismissColleague(
       colleague,
       (...args) => {
@@ -223,6 +237,7 @@ class Mediator extends Colleague {
       channel,
       id
     );
+    return identifier;
   };
 
   /**
@@ -232,6 +247,7 @@ class Mediator extends Colleague {
    * @param {object} context The context (or 'this')
    * @param {boolean} once Toggle to set subscribe only once
    * @param {string} identifier The identifier for this function
+   * @returns {string} The identifier
    */
   subscribe(channel, callback, context, once, identifier) {
     ////console.log("subscribe: callback", callback);
@@ -249,12 +265,14 @@ class Mediator extends Colleague {
     this._channels[channel].push(obj);
     this._colleagueMap[context] = channel;
     this.on(channel, this.publish, context);
+    return identifier;
   };
 
   /**
    * Trigger all callbacks for a channel
    * @param {string} channel The Channel events are pubished to
    * @param {object} N Extra parameter to pass to handler
+   * @returns {string} The channel
    */
   publish(channel, ...args) {
     if (!channel || !this._channels || !this._channels[channel]) {
@@ -263,8 +281,10 @@ class Mediator extends Colleague {
       return;
     }
 
-    let myArgs = [].slice.call(args, 1), subscription;
-    //console.log("args", myArgs);
+    const myArgs = Array.from(args); //Array.prototype.slice.call(args, 1);
+    let subscription; //[].slice.call(args, 1), subscription;
+    //console.debug("args", args);
+    //console.debug("myArgs", myArgs);
     let i = 0;
     const l = this._channels[channel].length;
 
@@ -285,6 +305,7 @@ class Mediator extends Colleague {
         //_logger.warn("AUGMENTED: Mediator: No subscription for channel '" + channel + "' on row " + i);
       }
     }
+    return channel;
   };
 
   /**
@@ -293,6 +314,7 @@ class Mediator extends Colleague {
    * @param {function} callback The function callback regestered
    * @param {object} context The context (or 'this')
    * @param {string} identifier The identifier for this function
+   * @returns {string} The channel
    */
   unsubscribe(channel, callback, context, identifier) {
     if (!this._channels[channel]) {
@@ -317,6 +339,7 @@ class Mediator extends Colleague {
         //logger.debug("AUGMENTED: Mediator: subscription " + this._channels[channel]);
       }
     }
+    return channel;
   };
 
   /**
@@ -325,9 +348,11 @@ class Mediator extends Colleague {
    * @param {string} subscription The subscription to subscribe to
    * @param {object} context The context (or 'this')
    * @param {string} identifier The identifier for this function
+   * @returns {string} The identifier
    */
   subscribeOnce(channel, subscription, context, identifier) {
     this.subscribe(channel, subscription, context, true, identifier);
+    return identifier;
   };
 
   /**
@@ -341,8 +366,8 @@ class Mediator extends Colleague {
   };
 
   /**
-   * Get Channels
-   * @returns {object} Returns all the channels
+   * Property for Channels
+   * @property {array} channels
    */
   get channels() {
     return this._channels;
