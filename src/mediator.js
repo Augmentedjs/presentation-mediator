@@ -1,4 +1,4 @@
-import * as Augmented from "augmentedjs-next";
+import { extend } from "next-core-utilities";
 import Colleague from "./colleague.js";
 
 const DEFAULT_CHANNEL = "augmentedChannel";
@@ -104,7 +104,7 @@ class Mediator extends Colleague {
 
   set subscriptions(subscriptions) {
     if (subscriptions) {
-      Augmented.Utility.extend(this._subscriptions || {}, subscriptions);
+      extend(this._subscriptions || {}, subscriptions);
     }
     subscriptions = subscriptions || this._subscriptions;
     if (!subscriptions || (subscriptions.length === 0)) {
@@ -293,7 +293,7 @@ class Mediator extends Colleague {
       if (subscription) {
         //console.log("subscription", subscription);
         if (subscription.fn) {
-          //console.log("calling", subscription.fn);
+          console.log("calling subscription.fn with ", myArgs);
           //subscription.fn(args);
           subscription.fn.apply(subscription.context, myArgs);
         }
