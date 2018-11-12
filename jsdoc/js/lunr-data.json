@@ -74,6 +74,16 @@
           "member",
           "properti"
         ],
+        "Colleague.html#sendMessage": [
+          "colleague#sendmessag",
+          "data",
+          "function",
+          "mediator'",
+          "messag",
+          "queue",
+          "send",
+          "sendmessag"
+        ],
         "Colleague.html#setMediatorMessageQueue": [
           "colleagu",
           "colleague#setmediatormessagequeu",
@@ -89,16 +99,6 @@
           "mediat",
           "remov",
           "removemediatormessagequeu"
-        ],
-        "Colleague.html#sendMessage": [
-          "colleague#sendmessag",
-          "data",
-          "function",
-          "mediator'",
-          "messag",
-          "queue",
-          "send",
-          "sendmessag"
         ],
         "Mediator.html": [
           "achiev",
@@ -118,10 +118,22 @@
           "view",
           "views.loos"
         ],
+        "Mediator.html#mediator": [
+          "mediat",
+          "mediator#medi",
+          "member",
+          "properti"
+        ],
         "Mediator.html#subscriptions": [
           "mediator#subscript",
           "member",
           "subscript"
+        ],
+        "Mediator.html#channels": [
+          "channel",
+          "mediator#channel",
+          "member",
+          "properti"
         ],
         "Mediator.html#defaultChannel": [
           "_.channel",
@@ -140,17 +152,31 @@
           "mediator#defaultidentifi",
           "member"
         ],
-        "Mediator.html#mediator": [
-          "mediat",
-          "mediator#medi",
-          "member",
-          "properti"
+        "Mediator.html#sendMessage": [
+          "data",
+          "function",
+          "mediator#sendmessag",
+          "mediator'",
+          "messag",
+          "queue",
+          "send",
+          "sendmessag"
         ],
-        "Mediator.html#channels": [
-          "channel",
-          "mediator#channel",
-          "member",
-          "properti"
+        "Mediator.html#setMediatorMessageQueue": [
+          "colleagu",
+          "function",
+          "mediat",
+          "mediator#setmediatormessagequeu",
+          "set",
+          "setmediatormessagequeu"
+        ],
+        "Mediator.html#removeMediatorMessageQueue": [
+          "colleagu",
+          "function",
+          "mediat",
+          "mediator#removemediatormessagequeu",
+          "remov",
+          "removemediatormessagequeu"
         ],
         "Mediator.html#delegateEvents": [
           "delegateev",
@@ -284,32 +310,6 @@
           "getchannel",
           "mediator#getchannel",
           "specif"
-        ],
-        "Mediator.html#sendMessage": [
-          "data",
-          "function",
-          "mediator#sendmessag",
-          "mediator'",
-          "messag",
-          "queue",
-          "send",
-          "sendmessag"
-        ],
-        "Mediator.html#setMediatorMessageQueue": [
-          "colleagu",
-          "function",
-          "mediat",
-          "mediator#setmediatormessagequeu",
-          "set",
-          "setmediatormessagequeu"
-        ],
-        "Mediator.html#removeMediatorMessageQueue": [
-          "colleagu",
-          "function",
-          "mediat",
-          "mediator#removemediatormessagequeu",
-          "remov",
-          "removemediatormessagequeu"
         ]
       },
       "length": 30
@@ -947,6 +947,10 @@
                       "ref": "Colleague.html#removeMediatorMessageQueue",
                       "tf": 16.666666666666664
                     },
+                    "Mediator.html#removeMediatorMessageQueue": {
+                      "ref": "Mediator.html#removeMediatorMessageQueue",
+                      "tf": 16.666666666666664
+                    },
                     "Mediator.html#dismissColleague": {
                       "ref": "Mediator.html#dismissColleague",
                       "tf": 8.333333333333332
@@ -954,10 +958,6 @@
                     "Mediator.html#dismissColleagueTrigger": {
                       "ref": "Mediator.html#dismissColleagueTrigger",
                       "tf": 6.25
-                    },
-                    "Mediator.html#removeMediatorMessageQueue": {
-                      "ref": "Mediator.html#removeMediatorMessageQueue",
-                      "tf": 16.666666666666664
                     }
                   },
                   "e": {
@@ -1058,19 +1058,61 @@
           },
           "e": {
             "docs": {},
+            "n": {
+              "docs": {},
+              "d": {
+                "docs": {
+                  "Colleague.html#sendMessage": {
+                    "ref": "Colleague.html#sendMessage",
+                    "tf": 12.5
+                  },
+                  "Mediator.html#sendMessage": {
+                    "ref": "Mediator.html#sendMessage",
+                    "tf": 12.5
+                  }
+                },
+                "m": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "s": {
+                      "docs": {},
+                      "s": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "g": {
+                            "docs": {
+                              "Colleague.html#sendMessage": {
+                                "ref": "Colleague.html#sendMessage",
+                                "tf": 683.3333333333334
+                              },
+                              "Mediator.html#sendMessage": {
+                                "ref": "Mediator.html#sendMessage",
+                                "tf": 683.3333333333334
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "t": {
               "docs": {
                 "Colleague.html#setMediatorMessageQueue": {
                   "ref": "Colleague.html#setMediatorMessageQueue",
                   "tf": 16.666666666666664
                 },
-                "Mediator.html#delegateEvents": {
-                  "ref": "Mediator.html#delegateEvents",
-                  "tf": 12.5
-                },
                 "Mediator.html#setMediatorMessageQueue": {
                   "ref": "Mediator.html#setMediatorMessageQueue",
                   "tf": 16.666666666666664
+                },
+                "Mediator.html#delegateEvents": {
+                  "ref": "Mediator.html#delegateEvents",
+                  "tf": 12.5
                 }
               },
               "m": {
@@ -1130,48 +1172,6 @@
                                     }
                                   }
                                 }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "n": {
-              "docs": {},
-              "d": {
-                "docs": {
-                  "Colleague.html#sendMessage": {
-                    "ref": "Colleague.html#sendMessage",
-                    "tf": 12.5
-                  },
-                  "Mediator.html#sendMessage": {
-                    "ref": "Mediator.html#sendMessage",
-                    "tf": 12.5
-                  }
-                },
-                "m": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "s": {
-                      "docs": {},
-                      "s": {
-                        "docs": {},
-                        "a": {
-                          "docs": {},
-                          "g": {
-                            "docs": {
-                              "Colleague.html#sendMessage": {
-                                "ref": "Colleague.html#sendMessage",
-                                "tf": 683.3333333333334
-                              },
-                              "Mediator.html#sendMessage": {
-                                "ref": "Mediator.html#sendMessage",
-                                "tf": 683.3333333333334
                               }
                             }
                           }
@@ -1523,6 +1523,14 @@
                             "ref": "Mediator.html",
                             "tf": 6.521739130434782
                           },
+                          "Mediator.html#setMediatorMessageQueue": {
+                            "ref": "Mediator.html#setMediatorMessageQueue",
+                            "tf": 16.666666666666664
+                          },
+                          "Mediator.html#removeMediatorMessageQueue": {
+                            "ref": "Mediator.html#removeMediatorMessageQueue",
+                            "tf": 16.666666666666664
+                          },
                           "Mediator.html#observeColleague": {
                             "ref": "Mediator.html#observeColleague",
                             "tf": 34.285714285714285
@@ -1542,14 +1550,6 @@
                           "Mediator.html#getColleagues": {
                             "ref": "Mediator.html#getColleagues",
                             "tf": 25
-                          },
-                          "Mediator.html#setMediatorMessageQueue": {
-                            "ref": "Mediator.html#setMediatorMessageQueue",
-                            "tf": 16.666666666666664
-                          },
-                          "Mediator.html#removeMediatorMessageQueue": {
-                            "ref": "Mediator.html#removeMediatorMessageQueue",
-                            "tf": 16.666666666666664
                           }
                         },
                         "e": {
@@ -1577,6 +1577,35 @@
                               "docs": {},
                               "e": {
                                 "docs": {},
+                                "n": {
+                                  "docs": {},
+                                  "d": {
+                                    "docs": {},
+                                    "m": {
+                                      "docs": {},
+                                      "e": {
+                                        "docs": {},
+                                        "s": {
+                                          "docs": {},
+                                          "s": {
+                                            "docs": {},
+                                            "a": {
+                                              "docs": {},
+                                              "g": {
+                                                "docs": {
+                                                  "Colleague.html#sendMessage": {
+                                                    "ref": "Colleague.html#sendMessage",
+                                                    "tf": 1150
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
                                 "t": {
                                   "docs": {},
                                   "m": {
@@ -1632,35 +1661,6 @@
                                                         }
                                                       }
                                                     }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                },
-                                "n": {
-                                  "docs": {},
-                                  "d": {
-                                    "docs": {},
-                                    "m": {
-                                      "docs": {},
-                                      "e": {
-                                        "docs": {},
-                                        "s": {
-                                          "docs": {},
-                                          "s": {
-                                            "docs": {},
-                                            "a": {
-                                              "docs": {},
-                                              "g": {
-                                                "docs": {
-                                                  "Colleague.html#sendMessage": {
-                                                    "ref": "Colleague.html#sendMessage",
-                                                    "tf": 1150
                                                   }
                                                 }
                                               }
@@ -2020,6 +2020,23 @@
                         },
                         "#": {
                           "docs": {},
+                          "m": {
+                            "docs": {},
+                            "e": {
+                              "docs": {},
+                              "d": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {
+                                    "Mediator.html#mediator": {
+                                      "ref": "Mediator.html#mediator",
+                                      "tf": 1150
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
                           "s": {
                             "docs": {},
                             "u": {
@@ -2165,6 +2182,32 @@
                                                 }
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "c": {
+                            "docs": {},
+                            "h": {
+                              "docs": {},
+                              "a": {
+                                "docs": {},
+                                "n": {
+                                  "docs": {},
+                                  "n": {
+                                    "docs": {},
+                                    "e": {
+                                      "docs": {},
+                                      "l": {
+                                        "docs": {
+                                          "Mediator.html#channels": {
+                                            "ref": "Mediator.html#channels",
+                                            "tf": 1150
                                           }
                                         }
                                       }
@@ -2349,40 +2392,77 @@
                               }
                             }
                           },
-                          "m": {
+                          "r": {
                             "docs": {},
                             "e": {
                               "docs": {},
-                              "d": {
+                              "m": {
                                 "docs": {},
-                                "i": {
-                                  "docs": {
-                                    "Mediator.html#mediator": {
-                                      "ref": "Mediator.html#mediator",
-                                      "tf": 1150
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "c": {
-                            "docs": {},
-                            "h": {
-                              "docs": {},
-                              "a": {
-                                "docs": {},
-                                "n": {
+                                "o": {
                                   "docs": {},
-                                  "n": {
+                                  "v": {
                                     "docs": {},
                                     "e": {
                                       "docs": {},
-                                      "l": {
-                                        "docs": {
-                                          "Mediator.html#channels": {
-                                            "ref": "Mediator.html#channels",
-                                            "tf": 1150
+                                      "m": {
+                                        "docs": {},
+                                        "e": {
+                                          "docs": {},
+                                          "d": {
+                                            "docs": {},
+                                            "i": {
+                                              "docs": {},
+                                              "a": {
+                                                "docs": {},
+                                                "t": {
+                                                  "docs": {},
+                                                  "o": {
+                                                    "docs": {},
+                                                    "r": {
+                                                      "docs": {},
+                                                      "m": {
+                                                        "docs": {},
+                                                        "e": {
+                                                          "docs": {},
+                                                          "s": {
+                                                            "docs": {},
+                                                            "s": {
+                                                              "docs": {},
+                                                              "a": {
+                                                                "docs": {},
+                                                                "g": {
+                                                                  "docs": {},
+                                                                  "e": {
+                                                                    "docs": {},
+                                                                    "q": {
+                                                                      "docs": {},
+                                                                      "u": {
+                                                                        "docs": {},
+                                                                        "e": {
+                                                                          "docs": {},
+                                                                          "u": {
+                                                                            "docs": {
+                                                                              "Mediator.html#removeMediatorMessageQueue": {
+                                                                                "ref": "Mediator.html#removeMediatorMessageQueue",
+                                                                                "tf": 1150
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
                                           }
                                         }
                                       }
@@ -2668,86 +2748,6 @@
                                 }
                               }
                             }
-                          },
-                          "r": {
-                            "docs": {},
-                            "e": {
-                              "docs": {},
-                              "m": {
-                                "docs": {},
-                                "o": {
-                                  "docs": {},
-                                  "v": {
-                                    "docs": {},
-                                    "e": {
-                                      "docs": {},
-                                      "m": {
-                                        "docs": {},
-                                        "e": {
-                                          "docs": {},
-                                          "d": {
-                                            "docs": {},
-                                            "i": {
-                                              "docs": {},
-                                              "a": {
-                                                "docs": {},
-                                                "t": {
-                                                  "docs": {},
-                                                  "o": {
-                                                    "docs": {},
-                                                    "r": {
-                                                      "docs": {},
-                                                      "m": {
-                                                        "docs": {},
-                                                        "e": {
-                                                          "docs": {},
-                                                          "s": {
-                                                            "docs": {},
-                                                            "s": {
-                                                              "docs": {},
-                                                              "a": {
-                                                                "docs": {},
-                                                                "g": {
-                                                                  "docs": {},
-                                                                  "e": {
-                                                                    "docs": {},
-                                                                    "q": {
-                                                                      "docs": {},
-                                                                      "u": {
-                                                                        "docs": {},
-                                                                        "e": {
-                                                                          "docs": {},
-                                                                          "u": {
-                                                                            "docs": {
-                                                                              "Mediator.html#removeMediatorMessageQueue": {
-                                                                                "ref": "Mediator.html#removeMediatorMessageQueue",
-                                                                                "tf": 1150
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
                           }
                         }
                       }
@@ -2768,8 +2768,16 @@
                         "ref": "Colleague.html#mediator",
                         "tf": 110
                       },
+                      "Mediator.html#mediator": {
+                        "ref": "Mediator.html#mediator",
+                        "tf": 110
+                      },
                       "Mediator.html#subscriptions": {
                         "ref": "Mediator.html#subscriptions",
+                        "tf": 110
+                      },
+                      "Mediator.html#channels": {
+                        "ref": "Mediator.html#channels",
                         "tf": 110
                       },
                       "Mediator.html#defaultChannel": {
@@ -2778,14 +2786,6 @@
                       },
                       "Mediator.html#defaultIdentifier": {
                         "ref": "Mediator.html#defaultIdentifier",
-                        "tf": 110
-                      },
-                      "Mediator.html#mediator": {
-                        "ref": "Mediator.html#mediator",
-                        "tf": 110
-                      },
-                      "Mediator.html#channels": {
-                        "ref": "Mediator.html#channels",
                         "tf": 110
                       }
                     }
@@ -2980,6 +2980,10 @@
                       "docs": {},
                       "n": {
                         "docs": {
+                          "Colleague.html#sendMessage": {
+                            "ref": "Colleague.html#sendMessage",
+                            "tf": 110
+                          },
                           "Colleague.html#setMediatorMessageQueue": {
                             "ref": "Colleague.html#setMediatorMessageQueue",
                             "tf": 110
@@ -2988,8 +2992,16 @@
                             "ref": "Colleague.html#removeMediatorMessageQueue",
                             "tf": 110
                           },
-                          "Colleague.html#sendMessage": {
-                            "ref": "Colleague.html#sendMessage",
+                          "Mediator.html#sendMessage": {
+                            "ref": "Mediator.html#sendMessage",
+                            "tf": 110
+                          },
+                          "Mediator.html#setMediatorMessageQueue": {
+                            "ref": "Mediator.html#setMediatorMessageQueue",
+                            "tf": 110
+                          },
+                          "Mediator.html#removeMediatorMessageQueue": {
+                            "ref": "Mediator.html#removeMediatorMessageQueue",
                             "tf": 110
                           },
                           "Mediator.html#delegateEvents": {
@@ -3042,18 +3054,6 @@
                           },
                           "Mediator.html#getChannel": {
                             "ref": "Mediator.html#getChannel",
-                            "tf": 110
-                          },
-                          "Mediator.html#sendMessage": {
-                            "ref": "Mediator.html#sendMessage",
-                            "tf": 110
-                          },
-                          "Mediator.html#setMediatorMessageQueue": {
-                            "ref": "Mediator.html#setMediatorMessageQueue",
-                            "tf": 110
-                          },
-                          "Mediator.html#removeMediatorMessageQueue": {
-                            "ref": "Mediator.html#removeMediatorMessageQueue",
                             "tf": 110
                           }
                         }
@@ -3651,6 +3651,16 @@
       "summary": "",
       "description": "Property of the mediator"
     },
+    "Colleague.html#sendMessage": {
+      "id": "Colleague.html#sendMessage",
+      "kind": "function",
+      "title": "sendMessage( message, data )",
+      "longname": "Colleague#sendMessage",
+      "name": "sendMessage",
+      "tags": "Colleague#sendMessage sendMessage",
+      "summary": "",
+      "description": "Send a message to the mediator's queue"
+    },
     "Colleague.html#setMediatorMessageQueue": {
       "id": "Colleague.html#setMediatorMessageQueue",
       "kind": "function",
@@ -3671,16 +3681,6 @@
       "summary": "",
       "description": "Remove the mediator from this colleague"
     },
-    "Colleague.html#sendMessage": {
-      "id": "Colleague.html#sendMessage",
-      "kind": "function",
-      "title": "sendMessage( message, data )",
-      "longname": "Colleague#sendMessage",
-      "name": "sendMessage",
-      "tags": "Colleague#sendMessage sendMessage",
-      "summary": "",
-      "description": "Send a message to the mediator's queue"
-    },
     "Mediator.html": {
       "id": "Mediator.html",
       "kind": "class",
@@ -3692,6 +3692,16 @@
       "description": "Mediator View - The mediator in the Mediator PatternThe mediator defines the interface for communication between colleague views.Loose coupling between colleague objects is achieved by having colleagues communicatewith the Mediator, rather than with each other. [Mediator]",
       "body": ""
     },
+    "Mediator.html#mediator": {
+      "id": "Mediator.html#mediator",
+      "kind": "member",
+      "title": "mediator",
+      "longname": "Mediator#mediator",
+      "name": "mediator",
+      "tags": "Mediator#mediator mediator",
+      "summary": "",
+      "description": "Property of the mediator"
+    },
     "Mediator.html#subscriptions": {
       "id": "Mediator.html#subscriptions",
       "kind": "member",
@@ -3701,6 +3711,16 @@
       "tags": "Mediator#subscriptions subscriptions",
       "summary": "",
       "description": "Subscriptions"
+    },
+    "Mediator.html#channels": {
+      "id": "Mediator.html#channels",
+      "kind": "member",
+      "title": "channels",
+      "longname": "Mediator#channels",
+      "name": "channels",
+      "tags": "Mediator#channels channels",
+      "summary": "",
+      "description": "Property for Channels"
     },
     "Mediator.html#defaultChannel": {
       "id": "Mediator.html#defaultChannel",
@@ -3722,25 +3742,35 @@
       "summary": "",
       "description": "Get the default identifier"
     },
-    "Mediator.html#mediator": {
-      "id": "Mediator.html#mediator",
-      "kind": "member",
-      "title": "mediator",
-      "longname": "Mediator#mediator",
-      "name": "mediator",
-      "tags": "Mediator#mediator mediator",
+    "Mediator.html#sendMessage": {
+      "id": "Mediator.html#sendMessage",
+      "kind": "function",
+      "title": "sendMessage( message, data )",
+      "longname": "Mediator#sendMessage",
+      "name": "sendMessage",
+      "tags": "Mediator#sendMessage sendMessage",
       "summary": "",
-      "description": "Property of the mediator"
+      "description": "Send a message to the mediator's queue"
     },
-    "Mediator.html#channels": {
-      "id": "Mediator.html#channels",
-      "kind": "member",
-      "title": "channels",
-      "longname": "Mediator#channels",
-      "name": "channels",
-      "tags": "Mediator#channels channels",
+    "Mediator.html#setMediatorMessageQueue": {
+      "id": "Mediator.html#setMediatorMessageQueue",
+      "kind": "function",
+      "title": "setMediatorMessageQueue( mediator )",
+      "longname": "Mediator#setMediatorMessageQueue",
+      "name": "setMediatorMessageQueue",
+      "tags": "Mediator#setMediatorMessageQueue setMediatorMessageQueue",
       "summary": "",
-      "description": "Property for Channels"
+      "description": "Set the mediator to this colleague"
+    },
+    "Mediator.html#removeMediatorMessageQueue": {
+      "id": "Mediator.html#removeMediatorMessageQueue",
+      "kind": "function",
+      "title": "removeMediatorMessageQueue()",
+      "longname": "Mediator#removeMediatorMessageQueue",
+      "name": "removeMediatorMessageQueue",
+      "tags": "Mediator#removeMediatorMessageQueue removeMediatorMessageQueue",
+      "summary": "",
+      "description": "Remove the mediator from this colleague"
     },
     "Mediator.html#delegateEvents": {
       "id": "Mediator.html#delegateEvents",
@@ -3871,36 +3901,6 @@
       "tags": "Mediator#getChannel getChannel",
       "summary": "",
       "description": "Get a specific channel"
-    },
-    "Mediator.html#sendMessage": {
-      "id": "Mediator.html#sendMessage",
-      "kind": "function",
-      "title": "sendMessage( message, data )",
-      "longname": "Mediator#sendMessage",
-      "name": "sendMessage",
-      "tags": "Mediator#sendMessage sendMessage",
-      "summary": "",
-      "description": "Send a message to the mediator's queue"
-    },
-    "Mediator.html#setMediatorMessageQueue": {
-      "id": "Mediator.html#setMediatorMessageQueue",
-      "kind": "function",
-      "title": "setMediatorMessageQueue( mediator )",
-      "longname": "Mediator#setMediatorMessageQueue",
-      "name": "setMediatorMessageQueue",
-      "tags": "Mediator#setMediatorMessageQueue setMediatorMessageQueue",
-      "summary": "",
-      "description": "Set the mediator to this colleague"
-    },
-    "Mediator.html#removeMediatorMessageQueue": {
-      "id": "Mediator.html#removeMediatorMessageQueue",
-      "kind": "function",
-      "title": "removeMediatorMessageQueue()",
-      "longname": "Mediator#removeMediatorMessageQueue",
-      "name": "removeMediatorMessageQueue",
-      "tags": "Mediator#removeMediatorMessageQueue removeMediatorMessageQueue",
-      "summary": "",
-      "description": "Remove the mediator from this colleague"
     }
   }
 }
