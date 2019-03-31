@@ -1,6 +1,4 @@
-
 describe('Given Augmented Presentation Mediator', () => {
-
 	describe('Given a Mediation of Views', () => {
 		it('PubSub.Mediator is defined', () => {
 			expect(PubSub.Mediator).to.not.be.undefined;
@@ -88,7 +86,7 @@ describe('Given Augmented Presentation Mediator', () => {
 				expect(channels[0].context).to.equal(c);
 			});
 
-			it('Colleague will not fail to send a message if the mediator is not available', () => {
+			it('Colleague will not fail to send a message if the mediator is not available (prints to console)', () => {
 				let ee = null;
 				try {
 					c.sendMessage("YouMustNotFail", "fail");

@@ -26,7 +26,7 @@ class Colleague extends View {
     if (this._mediator) {
       this._mediator.trigger(message, data);
     } else {
-      console.warn(`sendMessage: No mediator is available for ${this.name}, talking to myself.`);
+      console.warn(`sendMessage: No mediator is available for ${(this.name) ? this.name : "-unnamed-"}, talking to myself.`);
     }
     return message;
   };

@@ -66,7 +66,7 @@ class Mediator extends Colleague {
    */
   _dismissMe(colleague) {
     if (colleague instanceof Colleague) {
-      let channel = this._colleagueMap[colleague], myChannelObject = this._channels[channel];
+      const channel = this._colleagueMap[colleague], myChannelObject = this._channels[channel];
       return this.unsubscribe(channel, myChannelObject.fn, colleague, myChannelObject.identifier);
     }
     return null;
@@ -276,7 +276,7 @@ class Mediator extends Colleague {
    */
   publish(channel, ...args) {
     if (!channel || !this._channels || !this._channels[channel]) {
-      console.warn(`Mediator ${this.name}: channel ${channel} doest exist.`);
+      console.warn(`Mediator ${this.name}: channel ${channel} doesn't exist.`);
       this._channels = {};
       return;
     }
@@ -293,7 +293,7 @@ class Mediator extends Colleague {
       if (subscription) {
         //console.log("subscription", subscription);
         if (subscription.fn) {
-          console.log("calling subscription.fn with ", myArgs);
+          //console.debug("calling subscription.fn with ", myArgs);
           //subscription.fn(args);
           subscription.fn.apply(subscription.context, myArgs);
         }
