@@ -283,8 +283,8 @@ class Mediator extends Colleague {
 
     const myArgs = Array.from(args); //Array.prototype.slice.call(args, 1);
     let subscription; //[].slice.call(args, 1), subscription;
-    //console.debug("args", args);
-    //console.debug("myArgs", myArgs);
+    console.debug("publish: args", args);
+    console.debug("publish: myArgs", myArgs);
     let i = 0;
     const l = this._channels[channel].length;
 
