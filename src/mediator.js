@@ -121,7 +121,7 @@ class Mediator extends Colleague {
         subscription = subscription.$once;
         once = true;
       }
-      if (typeof subscription === 'string') {
+      if (typeof subscription === "string") {
         subscription = this[subscription];
       }
       this.subscribe(subscription.channel, subscription, this, once);
@@ -150,7 +150,7 @@ class Mediator extends Colleague {
         subscription = subscription.$once;
         once = true;
       }
-      if (typeof subscription == 'string') {
+      if (typeof subscription == "string") {
         subscription = this[subscription];
       }
       this.unsubscribe(subscription.channel, subscription.$once || subscription, this);
@@ -190,10 +190,10 @@ class Mediator extends Colleague {
     this.observeColleague(
       colleague,
       (...args) => {
-        //console.debug("triggered!", args[0]);
+        //console.debug("triggered!", args);
         //console.debug("this", this);
         //console.debug("colleague", colleague);
-        colleague.trigger(channel, args[0]); //arguments[0], arguments[1]);
+        colleague.trigger(channel, ...args); //arguments[0], arguments[1]);
       },
       channel,
       (identifier) ? identifier : this._defaultIdentifier
@@ -232,7 +232,7 @@ class Mediator extends Colleague {
     this.dismissColleague(
       colleague,
       (...args) => {
-        colleague.trigger(args[0], args[1]);//arguments[0], arguments[1]);
+        colleague.trigger(channel, ...args);//arguments[0], arguments[1]);
       },
       channel,
       id
@@ -281,21 +281,23 @@ class Mediator extends Colleague {
       return;
     }
 
-    const myArgs = Array.from(args); //Array.prototype.slice.call(args, 1);
-    let subscription; //[].slice.call(args, 1), subscription;
-    console.debug("publish: args", args);
-    console.debug("publish: myArgs", myArgs);
+    let subscription;
+    //console.debug("publish: args", ...args);
+    //console.debug("publish: args type", Array.isArray(args));
+
     let i = 0;
     const l = this._channels[channel].length;
 
     for (i = 0; i < l; i++) {
       subscription = this._channels[channel][i];
       if (subscription) {
-        //console.log("subscription", subscription);
+        //console.debug("subscription", subscription);
         if (subscription.fn) {
           //console.debug("calling subscription.fn with ", myArgs);
-          //subscription.fn(args);
-          subscription.fn.apply(subscription.context, myArgs);
+          subscription.fn.call(subscription.context, ...args);
+          //subscription.fn.call(subscription.context, args);
+          //console.debug("the func", subscription.fn);
+          //subscription.fn.apply(subscription.context, ...args);
         }
         if (subscription.once) {
           this.unsubscribe(channel, subscription.fn, subscription.context, subscription.identifier);

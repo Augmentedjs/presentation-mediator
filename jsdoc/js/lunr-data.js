@@ -65,8 +65,7 @@ window.lunrData = {
           "commun",
           "mediat",
           "through",
-          "view",
-          "view.th"
+          "view"
         ],
         "Colleague.html#mediator": [
           "colleague#medi",
@@ -106,17 +105,16 @@ window.lunrData = {
           "class",
           "colleagu",
           "commun",
-          "communicatewith",
           "coupl",
           "defin",
           "each",
           "have",
           "interfac",
+          "loos",
           "mediat",
           "object",
-          "patternth",
-          "view",
-          "views.loos"
+          "pattern",
+          "view"
         ],
         "Mediator.html#mediator": [
           "mediat",
@@ -137,7 +135,8 @@ window.lunrData = {
         ],
         "Mediator.html#defaultChannel": [
           "_.channel",
-          "channelconveni",
+          "channel",
+          "conveni",
           "default",
           "defaultchannel",
           "mediator#defaultchannel",
@@ -381,7 +380,7 @@ window.lunrData = {
                     "docs": {
                       "Mediator.html": {
                         "ref": "Mediator.html",
-                        "tf": 2.1739130434782608
+                        "tf": 2.083333333333333
                       }
                     }
                   }
@@ -437,7 +436,7 @@ window.lunrData = {
                   "docs": {
                     "Mediator.html": {
                       "ref": "Mediator.html",
-                      "tf": 2.1739130434782608
+                      "tf": 2.083333333333333
                     }
                   }
                 }
@@ -452,7 +451,7 @@ window.lunrData = {
                       "docs": {
                         "Mediator.html#defaultChannel": {
                           "ref": "Mediator.html#defaultChannel",
-                          "tf": 10
+                          "tf": 8.333333333333332
                         },
                         "Mediator.html#defaultIdentifier": {
                           "ref": "Mediator.html#defaultIdentifier",
@@ -709,7 +708,7 @@ window.lunrData = {
                         "docs": {
                           "Mediator.html": {
                             "ref": "Mediator.html",
-                            "tf": 2.1739130434782608
+                            "tf": 2.083333333333333
                           }
                         }
                       }
@@ -803,7 +802,7 @@ window.lunrData = {
                 "docs": {
                   "Mediator.html#defaultChannel": {
                     "ref": "Mediator.html#defaultChannel",
-                    "tf": 10
+                    "tf": 8.333333333333332
                   }
                 }
               }
@@ -877,16 +876,10 @@ window.lunrData = {
                   "r": {
                     "docs": {},
                     "n": {
-                      "docs": {},
-                      "t": {
-                        "docs": {},
-                        "h": {
-                          "docs": {
-                            "Mediator.html": {
-                              "ref": "Mediator.html",
-                              "tf": 2.1739130434782608
-                            }
-                          }
+                      "docs": {
+                        "Mediator.html": {
+                          "ref": "Mediator.html",
+                          "tf": 2.083333333333333
                         }
                       }
                     }
@@ -1420,6 +1413,10 @@ window.lunrData = {
                           "ref": "Mediator.html#channels",
                           "tf": 775
                         },
+                        "Mediator.html#defaultChannel": {
+                          "ref": "Mediator.html#defaultChannel",
+                          "tf": 8.333333333333332
+                        },
                         "Mediator.html#observeColleague": {
                           "ref": "Mediator.html#observeColleague",
                           "tf": 27.142857142857142
@@ -1460,32 +1457,6 @@ window.lunrData = {
                           "ref": "Mediator.html#getChannel",
                           "tf": 75
                         }
-                      },
-                      "c": {
-                        "docs": {},
-                        "o": {
-                          "docs": {},
-                          "n": {
-                            "docs": {},
-                            "v": {
-                              "docs": {},
-                              "e": {
-                                "docs": {},
-                                "n": {
-                                  "docs": {},
-                                  "i": {
-                                    "docs": {
-                                      "Mediator.html#defaultChannel": {
-                                        "ref": "Mediator.html#defaultChannel",
-                                        "tf": 10
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
                       }
                     }
                   }
@@ -1521,7 +1492,7 @@ window.lunrData = {
                           },
                           "Mediator.html": {
                             "ref": "Mediator.html",
-                            "tf": 6.521739130434782
+                            "tf": 6.25
                           },
                           "Mediator.html#setMediatorMessageQueue": {
                             "ref": "Mediator.html#setMediatorMessageQueue",
@@ -1775,39 +1746,7 @@ window.lunrData = {
                       },
                       "Mediator.html": {
                         "ref": "Mediator.html",
-                        "tf": 2.1739130434782608
-                      }
-                    },
-                    "i": {
-                      "docs": {},
-                      "c": {
-                        "docs": {},
-                        "a": {
-                          "docs": {},
-                          "t": {
-                            "docs": {},
-                            "e": {
-                              "docs": {},
-                              "w": {
-                                "docs": {},
-                                "i": {
-                                  "docs": {},
-                                  "t": {
-                                    "docs": {},
-                                    "h": {
-                                      "docs": {
-                                        "Mediator.html": {
-                                          "ref": "Mediator.html",
-                                          "tf": 2.1739130434782608
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
+                        "tf": 4.166666666666666
                       }
                     }
                   }
@@ -1822,7 +1761,7 @@ window.lunrData = {
                   "docs": {
                     "Mediator.html": {
                       "ref": "Mediator.html",
-                      "tf": 2.1739130434782608
+                      "tf": 2.083333333333333
                     }
                   }
                 }
@@ -1830,6 +1769,23 @@ window.lunrData = {
             },
             "n": {
               "docs": {},
+              "v": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "i": {
+                      "docs": {
+                        "Mediator.html#defaultChannel": {
+                          "ref": "Mediator.html#defaultChannel",
+                          "tf": 8.333333333333332
+                        }
+                      }
+                    }
+                  }
+                }
+              },
               "t": {
                 "docs": {},
                 "e": {
@@ -1955,6 +1911,20 @@ window.lunrData = {
                 }
               }
             }
+          },
+          "o": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "s": {
+                "docs": {
+                  "Mediator.html": {
+                    "ref": "Mediator.html",
+                    "tf": 2.083333333333333
+                  }
+                }
+              }
+            }
           }
         },
         "m": {
@@ -1987,7 +1957,7 @@ window.lunrData = {
                       },
                       "Mediator.html": {
                         "ref": "Mediator.html",
-                        "tf": 1913.0434782608695
+                        "tf": 1912.5
                       },
                       "Mediator.html#mediator": {
                         "ref": "Mediator.html#mediator",
@@ -2824,7 +2794,7 @@ window.lunrData = {
                     "docs": {
                       "Mediator.html#defaultChannel": {
                         "ref": "Mediator.html#defaultChannel",
-                        "tf": 10
+                        "tf": 8.333333333333332
                       }
                     }
                   }
@@ -2900,11 +2870,11 @@ window.lunrData = {
                 "docs": {
                   "Colleague.html": {
                     "ref": "Colleague.html",
-                    "tf": 5.555555555555555
+                    "tf": 11.11111111111111
                   },
                   "Mediator.html": {
                     "ref": "Mediator.html",
-                    "tf": 2.1739130434782608
+                    "tf": 4.166666666666666
                   },
                   "Mediator.html#observeColleague": {
                     "ref": "Mediator.html#observeColleague",
@@ -2921,43 +2891,6 @@ window.lunrData = {
                   "Mediator.html#dismissColleagueTrigger": {
                     "ref": "Mediator.html#dismissColleagueTrigger",
                     "tf": 6.25
-                  }
-                },
-                ".": {
-                  "docs": {},
-                  "t": {
-                    "docs": {},
-                    "h": {
-                      "docs": {
-                        "Colleague.html": {
-                          "ref": "Colleague.html",
-                          "tf": 5.555555555555555
-                        }
-                      }
-                    }
-                  }
-                },
-                "s": {
-                  "docs": {},
-                  ".": {
-                    "docs": {},
-                    "l": {
-                      "docs": {},
-                      "o": {
-                        "docs": {},
-                        "o": {
-                          "docs": {},
-                          "s": {
-                            "docs": {
-                              "Mediator.html": {
-                                "ref": "Mediator.html",
-                                "tf": 2.1739130434782608
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
                   }
                 }
               }
@@ -3105,7 +3038,7 @@ window.lunrData = {
                       "docs": {
                         "Mediator.html": {
                           "ref": "Mediator.html",
-                          "tf": 4.3478260869565215
+                          "tf": 4.166666666666666
                         }
                       }
                     }
@@ -3125,7 +3058,7 @@ window.lunrData = {
                 "docs": {
                   "Mediator.html": {
                     "ref": "Mediator.html",
-                    "tf": 2.1739130434782608
+                    "tf": 2.083333333333333
                   },
                   "Mediator.html#unsetSubscriptions": {
                     "ref": "Mediator.html#unsetSubscriptions",
@@ -3199,7 +3132,7 @@ window.lunrData = {
                 "docs": {
                   "Mediator.html": {
                     "ref": "Mediator.html",
-                    "tf": 2.1739130434782608
+                    "tf": 2.083333333333333
                   }
                 }
               }
@@ -3220,7 +3153,7 @@ window.lunrData = {
                     "docs": {
                       "Mediator.html": {
                         "ref": "Mediator.html",
-                        "tf": 2.1739130434782608
+                        "tf": 2.083333333333333
                       }
                     }
                   }
@@ -3350,7 +3283,7 @@ window.lunrData = {
                           "docs": {
                             "Mediator.html#defaultChannel": {
                               "ref": "Mediator.html#defaultChannel",
-                              "tf": 10
+                              "tf": 8.333333333333332
                             }
                           }
                         }
@@ -3480,7 +3413,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 212
+      "length": 211
     },
     "corpusTokens": [
       "_.channel",
@@ -3492,7 +3425,6 @@ window.lunrData = {
       "callback",
       "cancel",
       "channel",
-      "channelconveni",
       "child",
       "class",
       "colleagu",
@@ -3501,8 +3433,8 @@ window.lunrData = {
       "colleague#sendmessag",
       "colleague#setmediatormessagequeu",
       "commun",
-      "communicatewith",
       "context",
+      "conveni",
       "coupl",
       "data",
       "default",
@@ -3528,6 +3460,7 @@ window.lunrData = {
       "interfac",
       "list",
       "list:class",
+      "loos",
       "mediat",
       "mediator#channel",
       "mediator#defaultchannel",
@@ -3563,7 +3496,7 @@ window.lunrData = {
       "observecolleagueandtrigg",
       "on",
       "onc",
-      "patternth",
+      "pattern",
       "present",
       "properti",
       "publish",
@@ -3586,9 +3519,7 @@ window.lunrData = {
       "unset",
       "unsetsubscript",
       "unsubscrib",
-      "view",
-      "view.th",
-      "views.loos"
+      "view"
     ],
     "pipeline": [
       "trimmer",
@@ -3638,7 +3569,7 @@ window.lunrData = {
       "name": "Colleague",
       "tags": "Colleague",
       "summary": "",
-      "description": "Colleague View — The 'child' view.The Colleague communicates with other Colleagues through its Mediator.",
+      "description": "Colleague View — The 'child' view. The Colleague communicates with other Colleagues through its Mediator.",
       "body": ""
     },
     "Colleague.html#mediator": {
@@ -3689,7 +3620,7 @@ window.lunrData = {
       "name": "Mediator",
       "tags": "Mediator",
       "summary": "",
-      "description": "Mediator View - The mediator in the Mediator PatternThe mediator defines the interface for communication between colleague views.Loose coupling between colleague objects is achieved by having colleagues communicatewith the Mediator, rather than with each other. [Mediator]",
+      "description": "Mediator View - The mediator in the Mediator Pattern The mediator defines the interface for communication between colleague views. Loose coupling between colleague objects is achieved by having colleagues communicate with the Mediator, rather than with each other. [Mediator]",
       "body": ""
     },
     "Mediator.html#mediator": {
@@ -3730,7 +3661,7 @@ window.lunrData = {
       "name": "defaultChannel",
       "tags": "Mediator#defaultChannel defaultChannel",
       "summary": "",
-      "description": "Get the default channelConvenience method for _.channel = null;"
+      "description": "Get the default channel Convenience method for _.channel = null;"
     },
     "Mediator.html#defaultIdentifier": {
       "id": "Mediator.html#defaultIdentifier",

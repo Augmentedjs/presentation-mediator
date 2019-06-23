@@ -1,14 +1,14 @@
-describe('Given Augmented Presentation Mediator', () => {
-	describe('Given a Mediation of Views', () => {
-		it('PubSub.Mediator is defined', () => {
+describe("Given Augmented Presentation Mediator", () => {
+	describe("Given a Mediation of Views", () => {
+		it("PubSub.Mediator is defined", () => {
 			expect(PubSub.Mediator).to.not.be.undefined;
 		});
 
-		it('PubSub.Colleague is defined', () => {
+		it("PubSub.Colleague is defined", () => {
 			expect(PubSub.Colleague).to.not.be.undefined;
 		});
 
-		describe('Given a Mediator Views and Colleague View', () => {
+		describe("Given a Mediator Views and Colleague View", () => {
 			let m, c;
 
 			beforeEach(() => {
@@ -23,15 +23,15 @@ describe('Given Augmented Presentation Mediator', () => {
 				c = null;
 			});
 
-			it('can create an instance that is a mediator', () => {
+			it("can create an instance that is a mediator", () => {
 				expect(m instanceof PubSub.Mediator).to.be.true;
 			});
 
-			it('can create an instance that is a colleague', () => {
+			it("can create an instance that is a colleague", () => {
 				expect(c instanceof PubSub.Colleague).to.be.true;
 			});
 
-			it('the mediator can observe a colleague', () => {
+			it("the mediator can observe a colleague", () => {
 				m.observeColleague(c, () => { return "EEAK!";});
 
 				let channels = m.defaultChannel;
@@ -75,7 +75,7 @@ describe('Given Augmented Presentation Mediator', () => {
 				expect(channels).to.deep.equal([]);
 			});
 
-			it('the mediator can observe a colleague once and not leak', () => {
+			it("the mediator can observe a colleague once and not leak", () => {
 				m.observeColleague(c, () => { return "EEAK!";}, "monkey");
 				let m2 = new PubSub.Mediator();
 				m2.observeColleague(c, () => { return "EEAK!";}, "monkey");
@@ -86,7 +86,7 @@ describe('Given Augmented Presentation Mediator', () => {
 				expect(channels[0].context).to.equal(c);
 			});
 
-			it('Colleague will not fail to send a message if the mediator is not available (prints to console)', () => {
+			it("Colleague will not fail to send a message if the mediator is not available (prints to console)", () => {
 				let ee = null;
 				try {
 					c.sendMessage("YouMustNotFail", "fail");
@@ -96,20 +96,32 @@ describe('Given Augmented Presentation Mediator', () => {
 				expect(ee).to.equal(null);
 			});
 
-			it('the mediator can observe a colleague and trigger an event', () => {
-				c.on("bubba", (d) => { c.eeak = d; });
-				m.observeColleagueAndTrigger(c, "bubba", "monkey");
-				m.publish("bubba", "monkey", "EEAK!");
-				m.dismissColleagueTrigger(c, "bubba", "monkey");
-				expect(c.eeak).to.equal("monkey");
+			it("the mediator can observe a colleague and trigger an event", async () => {
+				c.on("channel", (...args) => { c.eeak = args; });
+				m.observeColleagueAndTrigger(c, "channel", "monkey");
+				await m.publish("channel", "I have a monkey", "EEAK!");
+				m.dismissColleagueTrigger(c, "channel", "monkey");
+				expect(c.eeak).to.deep.equal(["I have a monkey", "EEAK!"]);
 			});
 
-			it('the mediator can observe a colleague with the same message name as channel and not fail', () => {
-				c.on("monkey", (d) => { c.eeak = d; });
+			it("the mediator can observe a colleague with the same message name as channel and not fail", () => {
+				c.on("monkey", (...d) => { c.eeak = d[0]; });
 				m.observeColleagueAndTrigger(c, "monkey", "monkey");
 				m.publish("monkey", "monkey", "EEAK!");
 				m.dismissColleagueTrigger(c, "monkey", "monkey");
 				expect(c.eeak).to.equal("monkey");
+			});
+
+			it("the mediator can observe a colleague and trigger an event", async () => {
+				c.on("PANEL", (...term) => {
+					c.eeak = term[0];
+					c.squeak = term[1];
+				});
+				m.observeColleagueAndTrigger(c, "PANEL", "monkey");
+				await m.publish("PANEL", "SEARCH", "find my data");
+				m.dismissColleagueTrigger(c, "PANEL", "monkey");
+				expect(c.eeak).to.equal("SEARCH");
+				expect(c.squeak).to.equal("find my data");
 			});
 		});
 	});

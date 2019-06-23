@@ -261,7 +261,7 @@ Get the default identifier
 
 ## Colleague
 
-**Extends Presentation.View**
+**Extends View**
 
 <em>Colleague View</em> — The 'child' view.<br/>
 The Colleague communicates with other Colleagues through its Mediator.

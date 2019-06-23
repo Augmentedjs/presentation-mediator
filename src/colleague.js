@@ -4,7 +4,7 @@ import { View } from "presentation-view";
  * <em>Colleague View</em> &mdash; The 'child' view.<br/>
  * The Colleague communicates with other Colleagues through its Mediator.
  *
- * @extends Presentation.View
+ * @extends View
  */
 class Colleague extends View {
   constructor(options) {
