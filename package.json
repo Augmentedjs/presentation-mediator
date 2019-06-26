@@ -1,6 +1,6 @@
 {
   "name": "presentation-mediator",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "description": "The Augmented.js Next - Presentation Mediator Module.",
   "main": "dist/presentation-mediator.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
     "documentation": "^11.0.1",
-    "eslint": "^6.0.0",
+    "eslint": "^6.0.1",
     "eslint-config-kentcdodds": "^14.3.3",
     "foodoc": "0.0.9",
     "jsdoc": "^3.6.2",
@@ -41,7 +41,7 @@
     "mocha": "^6.1.4",
     "mocha-jsdom": "^2.0.0",
     "webpack": "^4.35.0",
-    "webpack-cli": "^3.3.4"
+    "webpack-cli": "^3.3.5"
   },
   "dependencies": {
     "next-core-utilities": "^2.6.1",
