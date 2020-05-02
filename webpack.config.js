@@ -1,16 +1,16 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   context: __dirname,
   target: "web",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'presentation-mediator.js',
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, "dist"),
+    filename: "presentation-mediator.js",
+    publicPath: "/dist/",
     library: "presentation-mediator",
-    globalObject: 'this',
+    globalObject: "this",
     libraryTarget: "umd",
     umdNamedDefine: true
   },
@@ -26,17 +26,17 @@ module.exports = {
     ]
   },
   externals: {
-    'next-core-utilities': {
-      commonjs: 'next-core-utilities',
-      commonjs2: 'next-core-utilities',
-      amd: 'next-core-utilities',
-      root: 'next-core-utilities'
+    "next-core-utilities": {
+      commonjs: "next-core-utilities",
+      commonjs2: "next-core-utilities",
+      amd: "next-core-utilities",
+      root: "next-core-utilities"
     },
-    'presentation-view': {
-      commonjs: 'presentation-view',
-      commonjs2: 'presentation-view',
-      amd: 'presentation-view',
-      root: 'presentation-view'
+    "presentation-view": {
+      commonjs: "presentation-view",
+      commonjs2: "presentation-view",
+      amd: "presentation-view",
+      root: "presentation-view"
     }
   },
   stats: "errors-only",

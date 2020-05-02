@@ -70,7 +70,7 @@ with the Mediator, rather than with each other.
 
 ### Parameters
 
--   `options`  
+-   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Options to set
 
 ### delegateEvents
 
@@ -195,7 +195,7 @@ Cancel subscription
 #### Parameters
 
 -   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function callback regestered
+-   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function callback registered (unused)
 -   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context (or 'this')
 -   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
 
@@ -264,11 +264,16 @@ Get the default identifier
 **Extends View**
 
 <em>Colleague View</em> — The 'child' view.<br/>
-The Colleague communicates with other Colleagues through its Mediator.
+The Colleague communicates with other Colleagues through its Mediator.<br/>
+Supported options:&lt;/br/>
+
+<ul>
+<li>mediator - A mediator for this view</li>
+</ul>
 
 ### Parameters
 
--   `options`  
+-   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Options to pass
 
 ### sendMessage
 
@@ -290,6 +295,11 @@ Set the mediator to this colleague
 -   `mediator` **[Mediator](#mediator)** The mediator
 
 Returns **[Mediator](#mediator)** The mediator
+
+**Meta**
+
+-   **deprecated**: set with: this.mediator = ...
+
 
 ### removeMediatorMessageQueue
 

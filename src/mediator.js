@@ -14,6 +14,7 @@ const DEFAULT_IDENTIFIER = "augmentedIdentifier";
  *     ^-----------[Colleague]
  * </pre>
  * @extends Colleague
+ * @param {object} options Options to set
  */
 class Mediator extends Colleague {
   constructor(options) {
@@ -250,14 +251,13 @@ class Mediator extends Colleague {
    * @returns {string} The identifier
    */
   subscribe(channel, callback, context, once, identifier) {
-    ////console.log("subscribe: callback", callback);
+    //console.log("subscribe: callback", callback);
     if (!this._channels[channel]) {
       this._channels[channel] = [];
     }
 
     const obj = {
       fn: callback,
-      // TODO: the context set to 'this' may be the source of the edge case mediator instance for a channel
       context: context || this,
       once: once,
       identifier: (identifier) ? identifier : this._defaultIdentifier
@@ -313,7 +313,7 @@ class Mediator extends Colleague {
   /**
    * Cancel subscription
    * @param {string} channel The Channel events are pubished to
-   * @param {function} callback The function callback regestered
+   * @param {function} callback The function callback registered (unused)
    * @param {object} context The context (or 'this')
    * @param {string} identifier The identifier for this function
    * @returns {string} The channel

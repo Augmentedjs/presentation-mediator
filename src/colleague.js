@@ -2,8 +2,12 @@ import { View } from "presentation-view";
 
 /**
  * <em>Colleague View</em> &mdash; The 'child' view.<br/>
- * The Colleague communicates with other Colleagues through its Mediator.
- *
+ * The Colleague communicates with other Colleagues through its Mediator.<br/>
+ * Supported options:</br/>
+ * <ul>
+ * <li>mediator - A mediator for this view</li>
+ * </ul>
+ * @param {object} options Options to pass
  * @extends View
  */
 class Colleague extends View {
@@ -34,9 +38,14 @@ class Colleague extends View {
   /**
    * Set the mediator to this colleague
    * @param {Mediator} mediator The mediator
+   * @deprecated set with: this.mediator = ...
    * @returns {Mediator} The mediator
    */
   setMediatorMessageQueue(mediator) {
+    return this._setMediatorMessageQueue(mediator);
+  };
+
+  _setMediatorMessageQueue(mediator) {
     //console.debug(`setMediatorMessageQueue: ${this.name} has a mediator? ${(this._mediator !== null)} and a mediator was passed? ${(mediator !== null)}`);
     if (mediator) {
       if (this._mediator) {
@@ -67,7 +76,7 @@ class Colleague extends View {
   };
 
   set mediator(mediator) {
-    return setMediatorMessageQueue(mediator);
+    return _setMediatorMessageQueue(mediator);
   };
 };
 

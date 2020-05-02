@@ -64,6 +64,8 @@
           "colleagu",
           "commun",
           "mediat",
+          "options:&lt;/br/&gt",
+          "support",
           "through",
           "view"
         ],
@@ -1049,6 +1051,104 @@
               }
             }
           },
+          "u": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Colleague.html": {
+                          "ref": "Colleague.html",
+                          "tf": 3.571428571428571
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "b": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "p": {
+                        "docs": {},
+                        "t": {
+                          "docs": {
+                            "Mediator.html#subscriptions": {
+                              "ref": "Mediator.html#subscriptions",
+                              "tf": 800
+                            },
+                            "Mediator.html#delegateEvents": {
+                              "ref": "Mediator.html#delegateEvents",
+                              "tf": 12.5
+                            },
+                            "Mediator.html#undelegateEvents": {
+                              "ref": "Mediator.html#undelegateEvents",
+                              "tf": 12.5
+                            },
+                            "Mediator.html#unsetSubscriptions": {
+                              "ref": "Mediator.html#unsetSubscriptions",
+                              "tf": 66.66666666666666
+                            },
+                            "Mediator.html#unsubscribe": {
+                              "ref": "Mediator.html#unsubscribe",
+                              "tf": 25
+                            },
+                            "Mediator.html#subscribeOnce": {
+                              "ref": "Mediator.html#subscribeOnce",
+                              "tf": 20
+                            }
+                          }
+                        }
+                      },
+                      "b": {
+                        "docs": {
+                          "Mediator.html#subscribe": {
+                            "ref": "Mediator.html#subscribe",
+                            "tf": 691.6666666666666
+                          },
+                          "Mediator.html#subscribeOnce": {
+                            "ref": "Mediator.html#subscribeOnce",
+                            "tf": 16.666666666666664
+                          }
+                        },
+                        "e": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "n": {
+                              "docs": {},
+                              "c": {
+                                "docs": {
+                                  "Mediator.html#subscribeOnce": {
+                                    "ref": "Mediator.html#subscribeOnce",
+                                    "tf": 670
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "e": {
             "docs": {},
             "n": {
@@ -1163,84 +1263,6 @@
                                         }
                                       }
                                     }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "u": {
-            "docs": {},
-            "b": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "c": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "i": {
-                      "docs": {},
-                      "p": {
-                        "docs": {},
-                        "t": {
-                          "docs": {
-                            "Mediator.html#subscriptions": {
-                              "ref": "Mediator.html#subscriptions",
-                              "tf": 800
-                            },
-                            "Mediator.html#delegateEvents": {
-                              "ref": "Mediator.html#delegateEvents",
-                              "tf": 12.5
-                            },
-                            "Mediator.html#undelegateEvents": {
-                              "ref": "Mediator.html#undelegateEvents",
-                              "tf": 12.5
-                            },
-                            "Mediator.html#unsetSubscriptions": {
-                              "ref": "Mediator.html#unsetSubscriptions",
-                              "tf": 66.66666666666666
-                            },
-                            "Mediator.html#unsubscribe": {
-                              "ref": "Mediator.html#unsubscribe",
-                              "tf": 25
-                            },
-                            "Mediator.html#subscribeOnce": {
-                              "ref": "Mediator.html#subscribeOnce",
-                              "tf": 20
-                            }
-                          }
-                        }
-                      },
-                      "b": {
-                        "docs": {
-                          "Mediator.html#subscribe": {
-                            "ref": "Mediator.html#subscribe",
-                            "tf": 691.6666666666666
-                          },
-                          "Mediator.html#subscribeOnce": {
-                            "ref": "Mediator.html#subscribeOnce",
-                            "tf": 16.666666666666664
-                          }
-                        },
-                        "e": {
-                          "docs": {},
-                          "o": {
-                            "docs": {},
-                            "n": {
-                              "docs": {},
-                              "c": {
-                                "docs": {
-                                  "Mediator.html#subscribeOnce": {
-                                    "ref": "Mediator.html#subscribeOnce",
-                                    "tf": 670
                                   }
                                 }
                               }
@@ -1393,7 +1415,7 @@
                   "docs": {
                     "Colleague.html": {
                       "ref": "Colleague.html",
-                      "tf": 5.555555555555555
+                      "tf": 3.571428571428571
                     }
                   }
                 }
@@ -1480,7 +1502,7 @@
                         "docs": {
                           "Colleague.html": {
                             "ref": "Colleague.html",
-                            "tf": 1916.6666666666667
+                            "tf": 1910.7142857142858
                           },
                           "Colleague.html#setMediatorMessageQueue": {
                             "ref": "Colleague.html#setMediatorMessageQueue",
@@ -1742,7 +1764,7 @@
                     "docs": {
                       "Colleague.html": {
                         "ref": "Colleague.html",
-                        "tf": 5.555555555555555
+                        "tf": 3.571428571428571
                       },
                       "Mediator.html": {
                         "ref": "Mediator.html",
@@ -1941,7 +1963,7 @@
                     "docs": {
                       "Colleague.html": {
                         "ref": "Colleague.html",
-                        "tf": 5.555555555555555
+                        "tf": 10.714285714285714
                       },
                       "Colleague.html#mediator": {
                         "ref": "Colleague.html#mediator",
@@ -2803,6 +2825,189 @@
             }
           }
         },
+        "o": {
+          "docs": {},
+          "p": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "s": {
+                      "docs": {},
+                      ":": {
+                        "docs": {},
+                        "&": {
+                          "docs": {},
+                          "l": {
+                            "docs": {},
+                            "t": {
+                              "docs": {},
+                              ";": {
+                                "docs": {},
+                                "/": {
+                                  "docs": {},
+                                  "b": {
+                                    "docs": {},
+                                    "r": {
+                                      "docs": {},
+                                      "/": {
+                                        "docs": {},
+                                        "&": {
+                                          "docs": {},
+                                          "g": {
+                                            "docs": {},
+                                            "t": {
+                                              "docs": {
+                                                "Colleague.html": {
+                                                  "ref": "Colleague.html",
+                                                  "tf": 3.571428571428571
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "b": {
+            "docs": {},
+            "j": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "Mediator.html": {
+                        "ref": "Mediator.html",
+                        "tf": 2.083333333333333
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "v": {
+                    "docs": {
+                      "Mediator.html#observeColleague": {
+                        "ref": "Mediator.html#observeColleague",
+                        "tf": 14.285714285714285
+                      },
+                      "Mediator.html#observeColleagueAndTrigger": {
+                        "ref": "Mediator.html#observeColleagueAndTrigger",
+                        "tf": 10
+                      }
+                    },
+                    "e": {
+                      "docs": {},
+                      "c": {
+                        "docs": {},
+                        "o": {
+                          "docs": {},
+                          "l": {
+                            "docs": {},
+                            "l": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "a": {
+                                  "docs": {},
+                                  "g": {
+                                    "docs": {},
+                                    "u": {
+                                      "docs": {
+                                        "Mediator.html#observeColleague": {
+                                          "ref": "Mediator.html#observeColleague",
+                                          "tf": 670
+                                        }
+                                      },
+                                      "e": {
+                                        "docs": {},
+                                        "a": {
+                                          "docs": {},
+                                          "n": {
+                                            "docs": {},
+                                            "d": {
+                                              "docs": {},
+                                              "t": {
+                                                "docs": {},
+                                                "r": {
+                                                  "docs": {},
+                                                  "i": {
+                                                    "docs": {},
+                                                    "g": {
+                                                      "docs": {},
+                                                      "g": {
+                                                        "docs": {
+                                                          "Mediator.html#observeColleagueAndTrigger": {
+                                                            "ref": "Mediator.html#observeColleagueAndTrigger",
+                                                            "tf": 675
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "n": {
+            "docs": {
+              "Mediator.html#subscribeOnce": {
+                "ref": "Mediator.html#subscribeOnce",
+                "tf": 16.666666666666664
+              }
+            },
+            "c": {
+              "docs": {
+                "Mediator.html#subscribe": {
+                  "ref": "Mediator.html#subscribe",
+                  "tf": 16.666666666666664
+                }
+              }
+            }
+          }
+        },
         "t": {
           "docs": {},
           "h": {
@@ -2819,7 +3024,7 @@
                       "docs": {
                         "Colleague.html": {
                           "ref": "Colleague.html",
-                          "tf": 5.555555555555555
+                          "tf": 3.571428571428571
                         }
                       }
                     }
@@ -2870,7 +3075,7 @@
                 "docs": {
                   "Colleague.html": {
                     "ref": "Colleague.html",
-                    "tf": 11.11111111111111
+                    "tf": 10.714285714285714
                   },
                   "Mediator.html": {
                     "ref": "Mediator.html",
@@ -3139,130 +3344,6 @@
             }
           }
         },
-        "o": {
-          "docs": {},
-          "b": {
-            "docs": {},
-            "j": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "c": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "Mediator.html": {
-                        "ref": "Mediator.html",
-                        "tf": 2.083333333333333
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "s": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "v": {
-                    "docs": {
-                      "Mediator.html#observeColleague": {
-                        "ref": "Mediator.html#observeColleague",
-                        "tf": 14.285714285714285
-                      },
-                      "Mediator.html#observeColleagueAndTrigger": {
-                        "ref": "Mediator.html#observeColleagueAndTrigger",
-                        "tf": 10
-                      }
-                    },
-                    "e": {
-                      "docs": {},
-                      "c": {
-                        "docs": {},
-                        "o": {
-                          "docs": {},
-                          "l": {
-                            "docs": {},
-                            "l": {
-                              "docs": {},
-                              "e": {
-                                "docs": {},
-                                "a": {
-                                  "docs": {},
-                                  "g": {
-                                    "docs": {},
-                                    "u": {
-                                      "docs": {
-                                        "Mediator.html#observeColleague": {
-                                          "ref": "Mediator.html#observeColleague",
-                                          "tf": 670
-                                        }
-                                      },
-                                      "e": {
-                                        "docs": {},
-                                        "a": {
-                                          "docs": {},
-                                          "n": {
-                                            "docs": {},
-                                            "d": {
-                                              "docs": {},
-                                              "t": {
-                                                "docs": {},
-                                                "r": {
-                                                  "docs": {},
-                                                  "i": {
-                                                    "docs": {},
-                                                    "g": {
-                                                      "docs": {},
-                                                      "g": {
-                                                        "docs": {
-                                                          "Mediator.html#observeColleagueAndTrigger": {
-                                                            "ref": "Mediator.html#observeColleagueAndTrigger",
-                                                            "tf": 675
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "n": {
-            "docs": {
-              "Mediator.html#subscribeOnce": {
-                "ref": "Mediator.html#subscribeOnce",
-                "tf": 16.666666666666664
-              }
-            },
-            "c": {
-              "docs": {
-                "Mediator.html#subscribe": {
-                  "ref": "Mediator.html#subscribe",
-                  "tf": 16.666666666666664
-                }
-              }
-            }
-          }
-        },
         "_": {
           "docs": {},
           ".": {
@@ -3413,7 +3494,7 @@
           }
         }
       },
-      "length": 211
+      "length": 213
     },
     "corpusTokens": [
       "_.channel",
@@ -3496,6 +3577,7 @@
       "observecolleagueandtrigg",
       "on",
       "onc",
+      "options:&lt;/br/&gt",
       "pattern",
       "present",
       "properti",
@@ -3513,6 +3595,7 @@
       "subscrib",
       "subscribeonc",
       "subscript",
+      "support",
       "through",
       "trigger",
       "undelegateev",
@@ -3569,7 +3652,7 @@
       "name": "Colleague",
       "tags": "Colleague",
       "summary": "",
-      "description": "Colleague View — The 'child' view. The Colleague communicates with other Colleagues through its Mediator.",
+      "description": "Colleague View — The 'child' view. The Colleague communicates with other Colleagues through its Mediator. Supported options:&lt;/br/&gt; mediator - A mediator for this view",
       "body": ""
     },
     "Colleague.html#mediator": {
