@@ -8,51 +8,51 @@ Augmented.js Presentation Mediator Module
 
 ### Table of Contents
 
--   [Mediator](#mediator)
-    -   [Parameters](#parameters)
-    -   [delegateEvents](#delegateevents)
-        -   [Parameters](#parameters-1)
-    -   [undelegateEvents](#undelegateevents)
-        -   [Parameters](#parameters-2)
-    -   [subscriptions](#subscriptions)
-        -   [Properties](#properties)
-    -   [unsetSubscriptions](#unsetsubscriptions)
-        -   [Parameters](#parameters-3)
-    -   [observeColleague](#observecolleague)
-        -   [Parameters](#parameters-4)
-    -   [observeColleagueAndTrigger](#observecolleagueandtrigger)
-        -   [Parameters](#parameters-5)
-    -   [dismissColleague](#dismisscolleague)
-        -   [Parameters](#parameters-6)
-    -   [dismissColleagueTrigger](#dismisscolleaguetrigger)
-        -   [Parameters](#parameters-7)
-    -   [subscribe](#subscribe)
-        -   [Parameters](#parameters-8)
-    -   [publish](#publish)
-        -   [Parameters](#parameters-9)
-    -   [unsubscribe](#unsubscribe)
-        -   [Parameters](#parameters-10)
-    -   [subscribeOnce](#subscribeonce)
-        -   [Parameters](#parameters-11)
-    -   [getColleagues](#getcolleagues)
-        -   [Parameters](#parameters-12)
-    -   [channels](#channels)
-        -   [Properties](#properties-1)
-    -   [getChannel](#getchannel)
-        -   [Parameters](#parameters-13)
-    -   [defaultChannel](#defaultchannel)
-        -   [Properties](#properties-2)
-    -   [defaultIdentifier](#defaultidentifier)
-        -   [Properties](#properties-3)
--   [Colleague](#colleague)
-    -   [Parameters](#parameters-14)
-    -   [sendMessage](#sendmessage)
-        -   [Parameters](#parameters-15)
-    -   [setMediatorMessageQueue](#setmediatormessagequeue)
-        -   [Parameters](#parameters-16)
-    -   [removeMediatorMessageQueue](#removemediatormessagequeue)
-    -   [mediator](#mediator-1)
-        -   [Properties](#properties-4)
+*   [Mediator](#mediator)
+    *   [Parameters](#parameters)
+    *   [delegateEvents](#delegateevents)
+        *   [Parameters](#parameters-1)
+    *   [undelegateEvents](#undelegateevents)
+        *   [Parameters](#parameters-2)
+    *   [subscriptions](#subscriptions)
+        *   [Properties](#properties)
+    *   [unsetSubscriptions](#unsetsubscriptions)
+        *   [Parameters](#parameters-3)
+    *   [observeColleague](#observecolleague)
+        *   [Parameters](#parameters-4)
+    *   [observeColleagueAndTrigger](#observecolleagueandtrigger)
+        *   [Parameters](#parameters-5)
+    *   [dismissColleague](#dismisscolleague)
+        *   [Parameters](#parameters-6)
+    *   [dismissColleagueTrigger](#dismisscolleaguetrigger)
+        *   [Parameters](#parameters-7)
+    *   [subscribe](#subscribe)
+        *   [Parameters](#parameters-8)
+    *   [publish](#publish)
+        *   [Parameters](#parameters-9)
+    *   [unsubscribe](#unsubscribe)
+        *   [Parameters](#parameters-10)
+    *   [subscribeOnce](#subscribeonce)
+        *   [Parameters](#parameters-11)
+    *   [getColleagues](#getcolleagues)
+        *   [Parameters](#parameters-12)
+    *   [channels](#channels)
+        *   [Properties](#properties-1)
+    *   [getChannel](#getchannel)
+        *   [Parameters](#parameters-13)
+    *   [defaultChannel](#defaultchannel)
+        *   [Properties](#properties-2)
+    *   [defaultIdentifier](#defaultidentifier)
+        *   [Properties](#properties-3)
+*   [Colleague](#colleague)
+    *   [Parameters](#parameters-14)
+    *   [sendMessage](#sendmessage)
+        *   [Parameters](#parameters-15)
+    *   [setMediatorMessageQueue](#setmediatormessagequeue)
+        *   [Parameters](#parameters-16)
+    *   [removeMediatorMessageQueue](#removemediatormessagequeue)
+    *   [mediator](#mediator-1)
+        *   [Properties](#properties-4)
 
 ## Mediator
 
@@ -70,7 +70,7 @@ with the Mediator, rather than with each other.
 
 ### Parameters
 
--   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Options to set
+*   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Options to set
 
 ### delegateEvents
 
@@ -78,8 +78,8 @@ Extend delegateEvents() to set subscriptions
 
 #### Parameters
 
--   `events`  
--   `event` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** The events to undelegate
+*   `events`  
+*   `event` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** The events to undelegate
 
 Returns **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** the events
 
@@ -89,8 +89,8 @@ Extend undelegateEvents() to unset subscriptions
 
 #### Parameters
 
--   `events`  
--   `event` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** The events to undelegate
+*   `events`  
+*   `event` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** The events to undelegate
 
 Returns **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** the events
 
@@ -100,7 +100,7 @@ Subscriptions
 
 #### Properties
 
--   `subscriptions` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** 
+*   `subscriptions` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** 
 
 ### unsetSubscriptions
 
@@ -108,7 +108,7 @@ Unsubscribe to each subscription
 
 #### Parameters
 
--   `subscriptions` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** An optional hash of subscription to remove
+*   `subscriptions` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** An optional hash of subscription to remove
 
 Returns **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** subscriptions
 
@@ -118,10 +118,10 @@ Observe a Colleague View - observe a Colleague and add to a channel
 
 #### Parameters
 
--   `colleague` **[Colleague](#colleague)** The Colleague to observe
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to call for this colleague
--   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel to add the pubished events to
--   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
+*   `colleague` **[Colleague](#colleague)** The Colleague to observe
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to call for this colleague
+*   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel to add the pubished events to
+*   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
 
 Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier
 
@@ -131,9 +131,9 @@ Observe a Colleague View - observe a Colleague and add to a channel and auto tri
 
 #### Parameters
 
--   `colleague` **[Colleague](#colleague)** The Colleague to observe
--   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel to add the pubished events to
--   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
+*   `colleague` **[Colleague](#colleague)** The Colleague to observe
+*   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel to add the pubished events to
+*   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
 
 Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier
 
@@ -143,10 +143,10 @@ Dismiss a Colleague View - Remove a Colleague from the channel
 
 #### Parameters
 
--   `colleague` **Presentation.Colleague** The Colleague to observe
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to call on channel event
--   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
--   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
+*   `colleague` **Presentation.Colleague** The Colleague to observe
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to call on channel event
+*   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
+*   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
 
 Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier
 
@@ -156,9 +156,9 @@ Dismiss a Colleague View - Remove a Colleague from the channel that has an auto 
 
 #### Parameters
 
--   `colleague` **[Colleague](#colleague)** The Colleague to observe
--   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
--   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
+*   `colleague` **[Colleague](#colleague)** The Colleague to observe
+*   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
+*   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
 
 Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier
 
@@ -168,11 +168,11 @@ Subscribe to a channel
 
 #### Parameters
 
--   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to call on channel event
--   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context (or 'this')
--   `once` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** Toggle to set subscribe only once
--   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
+*   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to call on channel event
+*   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context (or 'this')
+*   `once` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** Toggle to set subscribe only once
+*   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
 
 Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier
 
@@ -182,9 +182,9 @@ Trigger all callbacks for a channel
 
 #### Parameters
 
--   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
--   `args` **...any** 
--   `N` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Extra parameter to pass to handler
+*   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
+*   `args` **...any** 
+*   `N` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Extra parameter to pass to handler
 
 Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The channel
 
@@ -194,10 +194,10 @@ Cancel subscription
 
 #### Parameters
 
--   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function callback registered (unused)
--   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context (or 'this')
--   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
+*   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function callback registered (unused)
+*   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context (or 'this')
+*   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
 
 Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The channel
 
@@ -207,10 +207,10 @@ Subscribing to one event only
 
 #### Parameters
 
--   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
--   `subscription` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The subscription to subscribe to
--   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context (or 'this')
--   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
+*   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
+*   `subscription` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The subscription to subscribe to
+*   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context (or 'this')
+*   `identifier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier for this function
 
 Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The identifier
 
@@ -220,7 +220,7 @@ Get All the Colleagues for a channel
 
 #### Parameters
 
--   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
+*   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
 
 Returns **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** The colleagues for a channel
 
@@ -230,7 +230,7 @@ Property for Channels
 
 #### Properties
 
--   `channels` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** 
+*   `channels` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** 
 
 ### getChannel
 
@@ -238,7 +238,7 @@ Get a specific channel
 
 #### Parameters
 
--   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
+*   `channel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The Channel events are pubished to
 
 Returns **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** Returns the requested channel or null if nothing exists
 
@@ -249,7 +249,7 @@ Convenience method for \_.channel = null;
 
 #### Properties
 
--   `Returns` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** the default channel or null if nothing exists
+*   `Returns` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** the default channel or null if nothing exists
 
 ### defaultIdentifier
 
@@ -257,7 +257,7 @@ Get the default identifier
 
 #### Properties
 
--   `Returns` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** the default identifier
+*   `Returns` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** the default identifier
 
 ## Colleague
 
@@ -265,7 +265,7 @@ Get the default identifier
 
 <em>Colleague View</em> — The 'child' view.<br/>
 The Colleague communicates with other Colleagues through its Mediator.<br/>
-Supported options:&lt;/br/>
+Supported options:\</br/>
 
 <ul>
 <li>mediator - A mediator for this view</li>
@@ -273,7 +273,7 @@ Supported options:&lt;/br/>
 
 ### Parameters
 
--   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Options to pass
+*   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Options to pass
 
 ### sendMessage
 
@@ -281,8 +281,8 @@ Send a message to the mediator's queue
 
 #### Parameters
 
--   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Message to send
--   `data` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Data to send with message
+*   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Message to send
+*   `data` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Data to send with message
 
 Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Message sent
 
@@ -292,14 +292,13 @@ Set the mediator to this colleague
 
 #### Parameters
 
--   `mediator` **[Mediator](#mediator)** The mediator
+*   `mediator` **[Mediator](#mediator)** The mediator
 
 Returns **[Mediator](#mediator)** The mediator
 
 **Meta**
 
--   **deprecated**: set with: this.mediator = ...
-
+*   **deprecated**: set with: this.mediator = ...
 
 ### removeMediatorMessageQueue
 
@@ -313,4 +312,4 @@ Property of the mediator
 
 #### Properties
 
--   `mediator` **[Mediator](#mediator)** 
+*   `mediator` **[Mediator](#mediator)** 
