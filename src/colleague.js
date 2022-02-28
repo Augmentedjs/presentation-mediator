@@ -46,7 +46,7 @@ class Colleague extends View {
   };
 
   _setMediatorMessageQueue(mediator) {
-    console.debug(`setMediatorMessageQueue: ${this.name} has a mediator? ${(this._mediator !== null)} and a mediator was passed? ${(mediator !== null)}`);
+    //console.debug(`setMediatorMessageQueue: ${this.name} has a mediator? ${(this._mediator !== null)} and a mediator was passed? ${(mediator !== null)}`);
     if (mediator) {
       if (this._mediator) {
         // already registered, send a dismiss message

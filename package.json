@@ -1,6 +1,6 @@
 {
   "name": "presentation-mediator",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "The Augmented.js Next - Presentation Mediator Module.",
   "main": "dist/presentation-mediator.js",
   "scripts": {
@@ -34,7 +34,7 @@
     "chai": "^4.2.0",
     "documentation": "^13.0.2",
     "foodoc": "0.0.9",
-    "jsdoc": "^3.6.4",
+    "jsdoc": "^3.6.10",
     "jsdom": "^16.3.0",
     "mocha": "^8.0.1",
     "mocha-jsdom": "^2.0.0",
