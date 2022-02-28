@@ -1,6 +1,6 @@
 {
   "name": "presentation-mediator",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "The Augmented.js Next - Presentation Mediator Module.",
   "main": "dist/presentation-mediator.js",
   "scripts": {
@@ -42,7 +42,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "next-core-utilities": "^2.9.0",
+    "next-core-utilities": "^3.0.0",
     "presentation-view": "^3.0.2"
   },
   "bugs": {
